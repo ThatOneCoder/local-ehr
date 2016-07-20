@@ -16,7 +16,7 @@ public class InboundRouteBuilder extends SpringRouteBuilder {
     public void configure() throws Exception {
 
         Processor processor = new Processor();
-        String hl7Dir = (System.getenv("HL7MSGS_DIR")== null) ? getPropValues("hl7-message-dir") : System.getenv("HL7MSGS_DIR");;
+        String hl7Dir = (System.getenv("HL7MSGS_DIR")== null) ? getPropValues("hl7-message-dir") : System.getenv("HL7MSGS_DIR");
 
         from("file:" + hl7Dir + "?noop=true").routeId("EHR-Camel-Route")//.delay(100)
                 .unmarshal()
