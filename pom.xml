@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>LDEF-Demo-EHR</groupId>
-    <artifactId>LDEF-Demo-EHR</artifactId>
+    <groupId>Local-EHR</groupId>
+    <artifactId>Local-EHR</artifactId>
     <version>1.0</version>
 
     <properties>
@@ -108,7 +108,7 @@
                 <artifactId>camel-maven-plugin</artifactId>
                 <version>${camel.version}</version>
                 <configuration>
-                    <applicationContextUri>META-INF/spring/*.xml</applicationContextUri>
+                    <applicationContextUri>meta-inf/spring/*.xml</applicationContextUri>
                 </configuration>
             </plugin>
 
